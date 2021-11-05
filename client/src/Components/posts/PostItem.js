@@ -39,18 +39,10 @@ const PostItem = ({
           <Button onClick={(e) => addLike(_id)}>
             <AiFillLike /> <span>{likes.length}</span>
           </Button>
-          <Button
-            type="button"
-            class="btn btn-light"
-            onClick={(e) => removeLike(_id)}
-          >
+          <Button type="button" onClick={(e) => removeLike(_id)}>
             <AiFillDislike />{" "}
           </Button>
-          <Link
-            to={`/post/${_id}`}
-            class="btn"
-            style={{ backgroundColor: "#7b68ee" }}
-          >
+          <Link to={`/post/${_id}`} style={{ backgroundColor: "#7b68ee" }}>
             <AiOutlineComment />
             <span class="comment-count">{comments.length}</span>
           </Link>

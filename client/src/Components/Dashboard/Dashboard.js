@@ -63,7 +63,7 @@ const Dashboard = ({
           <Row>
             <Col>
               <Link to="/create-profile">
-                <Button className="priamry"> Create</Button>
+                <Button> Create</Button>
               </Link>
             </Col>
           </Row>

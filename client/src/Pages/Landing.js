@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import { Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Landing = ({ isAuthenticated }) => {
@@ -16,13 +17,23 @@ const Landing = ({ isAuthenticated }) => {
             Create a developer profile/portfolio, share posts and get help from
             other developers
           </p>
-          <div class="buttons">
-            <Link to="/signup" class="btn btn-primary">
-              Sign Up
-            </Link>
-            <Link to="/signin" class="btn btn-light">
-              Login
-            </Link>
+          <div className="buttons">
+            <Button style={{ backgroundColor: "#7b68ee", width: "10rem" }}>
+              <Link
+                to="/signup"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                Sign Up
+              </Link>
+            </Button>
+            <Button style={{ backgroundColor: "#7b68ee", width: "10rem" }}>
+              <Link
+                to="/signin"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                Login
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

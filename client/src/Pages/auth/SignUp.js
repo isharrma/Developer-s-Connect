@@ -131,7 +131,11 @@ const SignUp = ({ setAlert, register, isAuthenticated }) => {
                 </FormGroup>
               </CardBody>
               <CardFooter>
-                <Button type="submit" block color="primary">
+                <Button
+                  type="submit"
+                  block
+                  style={{ backgroundColor: "#7b68ee" }}
+                >
                   Sign Up
                 </Button>
               </CardFooter>

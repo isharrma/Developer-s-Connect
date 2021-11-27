@@ -161,7 +161,6 @@ img {
 .btn {
   display: inline-block;
   background: #6a5acd;
-  color: #6a5acd;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
   border: none;
@@ -352,6 +351,10 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.buttons {
+  display: flex;
 }
 
 /* Profiles Page */
